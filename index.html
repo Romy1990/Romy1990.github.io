@@ -4,16 +4,13 @@
 	   <title>Wilkommen zu deiner Reisebuchung</title>
      <script type="text/javascript">
        function validate() {
-        //if (document.getElementById('Flight').checked)
-        console.log("YES!")
+      /if (document.getElementById('Flight').checked)
        }
       </script>
 	</head>
 
 	<body>
     <h2>Persönliche Angaben</h2>
-
-    <button onclick="validate()">Click me</button>
 
     <form action="/action_page.php">
       First name:<br>
@@ -25,12 +22,43 @@
       <br>
     </form>
 
-    <form>
+
+    <!-- <button onclick="validate()">Add Flight</button>
+      <script>
+        function myFunction() {
+          var para = document.createElement("P");
+          var t = document.createDocumentFragment();
+          para.appendChild(t);
+          document.getElementById("myDIV").appendChild(para);
+        }
+      </script> -->
+      <form>
+        <input type="checkbox" name="Flight" value=""> Flight<br>
+            <input type="date" name="Abflugdatum" value="">
+            <input type="text" name="Start" value="">
+            <input type="text" name="Ziel" value="">
+            <input type="text" name="Anderer Rückflugssort" value="">
+
+        <input type="checkbox" name="Hotel" value=""> Hotel<br>
+                <input type="date" name="Von" value="">
+                <input type="date" name="Bis" value="">
+                <input type="number" name="Anzahl Zimmer" value="">
+
+        <input type="checkbox" name="Train" value=""> Train<br>
+                <input type="date" name="Abfahrt" value="">
+                <input type="text" name="Von" value="">
+                <input type="text" name="Nach" value="">
+                <input type="text" name="Anderer Rückreiseort" value="">
+        <input type="checkbox" name="Conference" value=""> Conference<br>
+                  <input type="url" name="Website-URL" value="">
+      </form>
+
+    <!-- <form>
       <input type="checkbox" name="Flight" value=""> Flight<br>
       <input type="checkbox" name="Hotel" value=""> Hotel<br>
       <input type="checkbox" name="Train" value=""> Train<br>
       <input type="checkbox" name="Conference" value=""> Conference<br>
-    </form>
+    </form> -->
 
     <input type="submit" value="Submit" >
 
