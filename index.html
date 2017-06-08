@@ -9,14 +9,22 @@
 
     <form action="/action_page.php">
       First name:<br>
-      <input type="text" name="firstname" value=""><br>
+      <input type="text" name="firstname" value="" required><br>
       Last name:<br>
-      <input type="text" name="lastname" value=""><br>
+      <input type="text" name="lastname" value="" required><br>
       Birthday:<br>
-      <input type="date" name="birthday" value=""><br>
+      <input type="date" name="birthday" value="" max="01.01.1940" min="01.01.2000" required><br>
       <br>
-
     </form>
+
+    <form>
+      <input type="checkbox" name="Flight" value=""> Flight<br>
+      <input type="checkbox" name="Hotel" value=""> Hotel<br>
+      <input type="checkbox" name="Train" value=""> Train<br>
+      <input type="checkbox" name="Conference" value=""> Conference<br>
+    </form>
+
+    <input type="submit" value="Submit" >
 
 	</body>
 </html<
